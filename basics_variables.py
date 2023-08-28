@@ -20,3 +20,7 @@ a, b, c = 1, 2, 3
 print(a)
 print(b)
 print(c)
+
+#Expresssions vs statements
+iq = 100 #this line (and another) is a statement, performing an action
+user_age = iq / 5 #iq / 5 -> expression, meaning it produces a value
