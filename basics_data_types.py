@@ -39,3 +39,9 @@ print(abs(-20)) #absolute value
 #Operator precendence - usuall math rules apply
 # () -> ** -> * / -> + -
 
+#Extra data type - complex, for complex math
+
+#bin - returns binary representation of an integer
+print(bin(5)) #in python all start with 0b and then the binary number
+print(int('0b101', 2)) #base 2 - binary numer given
+
