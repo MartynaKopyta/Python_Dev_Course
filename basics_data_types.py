@@ -36,3 +36,6 @@ print(5 % 4)
 print(round(3.1))
 print(abs(-20)) #absolute value
 
+#Operator precendence - usuall math rules apply
+# () -> ** -> * / -> + -
+
