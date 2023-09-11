@@ -44,3 +44,10 @@ print(abs(-20)) #absolute value
 # bin - returns binary representation of an integer
 print(bin(5))  # in python all start with 0b and then the binary number
 print(int('0b101', 2))  # base 2 - binary numer given
+
+# booleans
+name = 'Andy'
+is_cool = False
+print(bool(1))  # True
+print(bool(0))  # False
+print(bool('True'))  # Valid bool

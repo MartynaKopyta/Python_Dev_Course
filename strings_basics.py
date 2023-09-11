@@ -52,3 +52,18 @@ print(selfish[::-1])  # reverse of the string, [::-2] would be every other from 
 
 # immutability, if you want to change a string, you can only replace it
 # for example can't change a single character from a string
+
+# FUNCTIONS
+# For type conversion str(), int() etc
+print(float(5))
+# For numbers round(), abs() etc
+print(round(8.3))
+# For strings len()
+print(len('hellooo'))  # counts like a human from 0
+
+# METHODS for Strings
+quote = 'to be or not to be'
+print(quote.upper())  # lower similarly
+print(quote.capitalize())  # Only the first letter
+print(quote.find('be'))  # be is first found at index 3
+print(quote.replace('be', 'me'))
