@@ -48,3 +48,6 @@ print(set1)  # unlike just difference, the set was changed
 # united sets together, no duplicates
 print(set1.union(set2))
 print(set1 | set2)  # same meaning as the line above
+
+# add multiple items
+set1.update(set2)
