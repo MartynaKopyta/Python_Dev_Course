@@ -4,12 +4,12 @@ class PlayerCharacter:
 
     def __init__(self, name, age=0):  # constructor, can use default parameters
         if self.membership:  # here redundant code, but could be useful to check some rules
-            self.name = name
-            self.age = age
+            self._name = name  # no real private variables in python _ is used to signal that sth should be private
+            self._age = age
 # could also be PlayerCharacter.membership, this way we refer to class object attribute, PlayerCharacter.name won't work
 
     def run(self, how):
-        print(f'{self.name} in running {how}')
+        print(f'{self._name} in running {how}')
         return 'done'
 
     # def __str__(self): makes printing PlayerCharacter print name
@@ -30,7 +30,7 @@ player2 = PlayerCharacter('Cindy', 24)
 print(player1)
 player1.run('fast')
 
-print(player2.name)
+# print(player2.name)
 print(player2.run('slowly'))
 
 player1.attack = 50
@@ -41,4 +41,11 @@ print(player1.attack)
 
 print(player1.adding_things(1, 1))
 player3 = PlayerCharacter.adding_things(2, 3)  # using a class method
-print(player3.age)
+# print(player3.age)
+
+# 4 Pillars of OOP
+# encapsulation - functions and attributes encapsulated is a class - a package of those
+# abstraction - hiding information, that is enabling access only to necessary data
+# its abstracting away things we don't need to care about, the user doesn't need to know
+# inheritance - parent - child idea, shared and extended functionality
+# polymorphism - the same methods can be implemented many ways
